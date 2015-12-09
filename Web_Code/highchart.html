@@ -48,17 +48,6 @@
 		});
 	}
 
-	function getTime(){
-		today = new Date();
-		today_year = today.getFullYear(); //西元年份
-		today_month = today.getMonth()+1; //一年中的第幾月
-		today_date = today.getDate(); //一月份中的第幾天
-		today_hours = today.getHours(); //一天中的小時數
-		today_minutes = today.getMinutes(); //一天中的分鐘
-		today_seconds = today.getSeconds(); //一天中的秒數
-		var CurrentDate = today_year+"-"+today_month+"-"+today_date+"  "+today_hours+":"+today_minutes+":"+today_seconds;
-		return CurrentDate;
-	}
 	$(function () {
 		$.ajax({									  
 			url: 'database.php',//連接的URL	  
